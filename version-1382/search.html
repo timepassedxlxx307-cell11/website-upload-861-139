@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>搜索影片 - 国产影视大全</title>
+  <meta name="description" content="搜索影片频道，支持按片名、类型、地区、年份检索高清免费影片。">
+  <meta name="keywords" content="最新国产影片,免费高清在线,观看全集,影视大全站,国产电影,热播剧,免费观看,影片搜索">
+  <meta name="applicable-device" content="pc,mobile">
+  <meta name="renderer" content="webkit">
+  <link rel="stylesheet" href="./assets/base.css">
+  <link rel="stylesheet" href="./assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="./index.html" aria-label="国产影视大全">
+        <span class="brand-mark">影</span>
+        <span class="brand-text">
+          <strong>国产影视大全</strong>
+          <small>免费高清 · 高速观影</small>
+        </span>
+      </a>
+      <nav class="desktop-nav" aria-label="主导航">
+        <a class="nav-link " href="./index.html">首页</a>
+        <a class="nav-link " href="./categories.html">分类</a>
+        <a class="nav-link " href="./rankings.html">排行榜</a>
+        <a class="nav-link active" href="./search.html">搜索</a>
+        <a class="nav-link category-shortcut" href="./category-guochan-hot.html">国产热映</a>
+        <a class="nav-link category-shortcut" href="./category-movie-hall.html">电影大厅</a>
+        <a class="nav-link category-shortcut" href="./category-drama-series.html">剧集专区</a>
+        <a class="nav-link category-shortcut" href="./category-suspense-crime.html">悬疑犯罪</a>
+      </nav>
+      <form class="header-search" action="./search.html" method="get">
+        <input type="search" name="q" placeholder="搜索影片、地区、类型" autocomplete="off">
+        <button type="submit">搜索</button>
+      </form>
+      <button class="menu-toggle" type="button" aria-label="展开导航" aria-expanded="false">☰</button>
+    </div>
+    <nav class="mobile-nav" aria-label="移动导航">
+      <a class="mobile-nav-link " href="./index.html">首页</a>
+      <a class="mobile-nav-link " href="./categories.html">分类</a>
+      <a class="mobile-nav-link " href="./rankings.html">排行榜</a>
+      <a class="mobile-nav-link active" href="./search.html">搜索</a>
+    </nav>
+  </header>
+  <main>
+    <section class="page-hero simple-hero search-hero">
+      <div>
+        <span>Search</span>
+        <h1>搜索影片</h1>
+        <p>输入片名、类型、地区或年份，快速找到想看的影片。</p>
+        <form class="search-page-form" action="./search.html" method="get">
+          <input id="search-page-input" type="search" name="q" placeholder="搜索影片" autocomplete="off">
+          <button type="submit">搜索</button>
+        </form>
+      </div>
+    </section>
+    <section class="section-wrap">
+      <div class="section-heading">
+        <span>Result</span>
+        <h2 id="search-title">热门影片</h2>
+        <a href="./categories.html">返回分类</a>
+      </div>
+      <div class="movie-grid" id="search-results">
+        <article class="movie-card" data-title="克里斯托夫案件" data-region="法国" data-type="电影" data-year="2025" data-genre="剧情,悬疑,传记">
+          <a href="./movie-1.html" title="克里斯托夫案件">
+            <span class="poster-box">
+              <img src="./1.jpg" alt="克里斯托夫案件" loading="lazy">
+              <span class="poster-gradient"></span>
+              <span class="poster-play">▶</span>
+              <span class="poster-duration">134:40</span>
+            </span>
+            <span class="card-body">
+              <span class="card-meta">
+                <span>电影大厅</span>
+                <span>2025</span>
+              </span>
+              <h3 class="card-title">克里斯托夫案件</h3>
+              <span class="card-desc">改编自中世纪最后一起女巫审判案,一个修道士用毕生心血为一位被神父诬陷的少女翻案。</span>
+              <span class="card-tags">
+          <span>真实事件改编</span>
+          <span>宗教审判</span>
+          <span>历史</span>
+              </span>
+            </span>
+          </a>
+        </article>
+        <article class="movie-card" data-title="发现之岛" data-region="英国" data-type="电影" data-year="2024" data-genre="冒险">
+          <a href="./movie-2.html" title="发现之岛">
+            <span class="poster-box">
+              <img src="./2.jpg" alt="发现之岛" loading="lazy">
+              <span class="poster-gradient"></span>
+              <span class="poster-play">▶</span>
+              <span class="poster-duration">130:01</span>
+            </span>
+            <span class="card-body">
+              <span class="card-meta">
+                <span>全球影库</span>
+                <span>2024</span>
+              </span>
+              <h3 class="card-title">发现之岛</h3>
+              <span class="card-desc">卫星图像暴露南太平洋一处不该存在的神秘岛屿,科考队踏入后发现岛上的进化规则截然不同。</span>
+              <span class="card-tags">
+          <span>探险</span>
+          <span>未知生物</span>
+          <span>科幻</span>
+              </span>
+            </span>
+          </a>
+        </article>
+        <article class="movie-card" data-title="雷云" data-region="美国" data-type="电视剧" data-year="2020" data-genre="科幻,悬疑,惊悚">
+          <a href="./movie-3.html" title="雷云">
+            <span class="poster-box">
+              <img src="./3.jpg" alt="雷云" loading="lazy">
+              <span class="poster-gradient"></span>
+              <span class="poster-play">▶</span>
+              <span class="poster-duration">149:25</span>
+            </span>
+            <span class="card-body">
+              <span class="card-meta">
+                <span>科幻奇幻</span>
+                <span>2020</span>
+              </span>
+              <h3 class="card-title">雷云</h3>
+              <span class="card-desc">美国中部小镇上空出现一片永不消散的雷云,每道闪电劈中的地方,都会出现一个已死之人的克隆体。</span>
+              <span class="card-tags">
+          <span>超自然现象</span>
+          <span>小镇</span>
+          <span>气象武器</span>
+              </span>
+            </span>
+          </a>
+        </article>
+        <article class="movie-card" data-title="巴布瓦迪市" data-region="尼日利亚" data-type="电影" data-year="2021" data-genre="喜剧/犯罪">
+          <a href="./movie-4.html" title="巴布瓦迪市">
+            <span class="poster-box">
+              <img src="./4.jpg" alt="巴布瓦迪市" loading="lazy">
+              <span class="poster-gradient"></span>
+              <span class="poster-play">▶</span>
+              <span class="poster-duration">83:27</span>
+            </span>
+            <span class="card-body">
+              <span class="card-meta">
+                <span>爱情喜剧</span>
+                <span>2021</span>
+              </span>
+              <h3 class="card-title">巴布瓦迪市</h3>
+              <span class="card-desc">一个骗子为了还债,谎称自己是外国回来的大富豪,要在全市最穷的社区建造“非洲迪拜”。</span>
+              <span class="card-tags">
+          <span>诺莱坞</span>
+          <span>荒诞</span>
+          <span>诈骗</span>
+              </span>
+            </span>
+          </a>
+        </article>
+        <article class="movie-card" data-title="蜀山:新蜀山剑侠" data-region="中国香港" data-type="电影" data-year="1983" data-genre="奇幻、武侠、动作">
+          <a href="./movie-5.html" title="蜀山:新蜀山剑侠">
+            <span class="poster-box">
+              <img src="./5.jpg" alt="蜀山:新蜀山剑侠" loading="lazy">
+              <span class="poster-gradient"></span>
+              <span class="poster-play">▶</span>
+              <span class="poster-duration">102:28</span>
+            </span>
+            <span class="card-body">
+              <span class="card-meta">
+                <span>动作冒险</span>
+                <span>1983</span>
+              </span>
+              <h3 class="card-title">蜀山:新蜀山剑侠</h3>
+              <span class="card-desc">血魔即将复活,蜀山派弟子丁引必须找到天击雷炎双剑合璧,才能阻止浩劫。</span>
+              <span class="card-tags">
+          <span>徐克</span>
+          <span>仙侠</span>
+          <span>特效革新</span>
+              </span>
+            </span>
+          </a>
+        </article>
+        <article class="movie-card" data-title="向医院前行" data-region="中国大陆" data-type="电影" data-year="2024" data-genre="剧情,家庭,灾难">
+          <a href="./movie-6.html" title="向医院前行">
+            <span class="poster-box">
+              <img src="./6.jpg" alt="向医院前行" loading="lazy">
+              <span class="poster-gradient"></span>
+              <span class="poster-play">▶</span>
+              <span class="poster-duration">121:52</span>
+            </span>
+            <span class="card-body">
+              <span class="card-meta">
+                <span>国产热映</span>
+                <span>2024</span>
+              </span>
+              <h3 class="card-title">向医院前行</h3>
+              <span class="card-desc">大地震后,一位癌症晚期的父亲背着重伤女儿徒步百公里向医院前行。</span>
+              <span class="card-tags">
+          <span>医疗</span>
+          <span>求生</span>
+          <span>人性</span>
+              </span>
+            </span>
+          </a>
+        </article>
+        <article class="movie-card" data-title="天龙八部之虚竹传奇粤语" data-region="中国香港" data-type="电视剧" data-year="1997" data-genre="古装/武侠">
+          <a href="./movie-7.html" title="天龙八部之虚竹传奇粤语">
+            <span class="poster-box">
+              <img src="./7.jpg" alt="天龙八部之虚竹传奇粤语" loading="lazy">
+              <span class="poster-gradient"></span>
+              <span class="poster-play">▶</span>
+              <span class="poster-duration">118:49</span>
+            </span>
+            <span class="card-body">
+              <span class="card-meta">
+                <span>剧集专区</span>
+                <span>1997</span>
+              </span>
+              <h3 class="card-title">天龙八部之虚竹传奇粤语</h3>
+              <span class="card-desc">最不想学武功的丑和尚,偏偏被无崖子灌输了七十年内力,还被迫当了逍遥派掌门。</span>
+              <span class="card-tags">
+          <span>金庸</span>
+          <span>少林</span>
+          <span>奇遇</span>
+              </span>
+            </span>
+          </a>
+        </article>
+        <article class="movie-card" data-title="28年毁灭倒数" data-region="英国" data-type="电影" data-year="2030" data-genre="恐怖,科幻">
+          <a href="./movie-8.html" title="28年毁灭倒数">
+            <span class="poster-box">
+              <img src="./8.jpg" alt="28年毁灭倒数" loading="lazy">
+              <span class="poster-gradient"></span>
+              <span class="poster-play">▶</span>
+              <span class="poster-duration">138:22</span>
+            </span>
+            <span class="card-body">
+              <span class="card-meta">
+                <span>悬疑犯罪</span>
+                <span>2030</span>
+              </span>
+              <h3 class="card-title">28年毁灭倒数</h3>
+              <span class="card-desc">病毒爆发28年后,地堡里的最后一代人被告知:地面上的感染者已经进化出智慧。</span>
+              <span class="card-tags">
+          <span>病毒末日</span>
+          <span>漫长隔离</span>
+          <span>人性沦丧</span>
+              </span>
+            </span>
+          </a>
+        </article>
+        <article class="movie-card" data-title="喜悦" data-region="法国" data-type="电影" data-year="2025" data-genre="喜剧,剧情">
+          <a href="./movie-9.html" title="喜悦">
+            <span class="poster-box">
+              <img src="./9.jpg" alt="喜悦" loading="lazy">
+              <span class="poster-gradient"></span>
+              <span class="poster-play">▶</span>
+              <span class="poster-duration">131:56</span>
+            </span>
+            <span class="card-body">
+              <span class="card-meta">
+                <span>全球影库</span>
+                <span>2025</span>
+              </span>
+              <h3 class="card-title">喜悦</h3>
+              <span class="card-desc">一个职业“葬礼哭丧人”被迫为一个恨之入骨的大财主送终,却因笑场闹出一系列荒唐遗产风波。</span>
+              <span class="card-tags">
+          <span>黑色幽默</span>
+          <span>葬礼</span>
+          <span>假笑</span>
+              </span>
+            </span>
+          </a>
+        </article>
+        <article class="movie-card" data-title="密室大逃脱第七季" data-region="中国大陆" data-type="综艺" data-year="2025" data-genre="真人秀,悬疑,解谜">
+          <a href="./movie-10.html" title="密室大逃脱第七季">
+            <span class="poster-box">
+              <img src="./10.jpg" alt="密室大逃脱第七季" loading="lazy">
+              <span class="poster-gradient"></span>
+              <span class="poster-play">▶</span>
+              <span class="poster-duration">142:37</span>
+            </span>
+            <span class="card-body">
+              <span class="card-meta">
+                <span>电影大厅</span>
+                <span>2025</span>
+              </span>
+              <h3 class="card-title">密室大逃脱第七季</h3>
+              <span class="card-desc">全明星阵容再度集结,这次他们将挑战全球最难密室,在沉浸式电影级场景中,命悬一线,唯有团结才能逃出。</span>
+              <span class="card-tags">
+          <span>密室</span>
+          <span>烧脑</span>
+          <span>团综</span>
+              </span>
+            </span>
+          </a>
+        </article>
+        <article class="movie-card" data-title="生人活埋" data-region="西班牙" data-type="电影" data-year="2024" data-genre="惊悚/悬疑">
+          <a href="./movie-11.html" title="生人活埋">
+            <span class="poster-box">
+              <img src="./11.jpg" alt="生人活埋" loading="lazy">
+              <span class="poster-gradient"></span>
+              <span class="poster-play">▶</span>
+              <span class="poster-duration">100:06</span>
+            </span>
+            <span class="card-body">
+              <span class="card-meta">
+                <span>悬疑犯罪</span>
+                <span>2024</span>
+              </span>
+              <h3 class="card-title">生人活埋</h3>
+              <span class="card-desc">一名女记者醒来发现自己被钉在棺材里,她唯一的工具是手机,而直播间里正有30万人在决定要不要报警。</span>
+              <span class="card-tags">
+          <span>密闭空间</span>
+          <span>心理</span>
+          <span>反转</span>
+              </span>
+            </span>
+          </a>
+        </article>
+        <article class="movie-card" data-title="德尔苏·乌扎拉" data-region="俄罗斯/日本" data-type="电影" data-year="2026" data-genre="剧情/冒险">
+          <a href="./movie-12.html" title="德尔苏·乌扎拉">
+            <span class="poster-box">
+              <img src="./12.jpg" alt="德尔苏·乌扎拉" loading="lazy">
+              <span class="poster-gradient"></span>
+              <span class="poster-play">▶</span>
+              <span class="poster-duration">126:58</span>
+            </span>
+            <span class="card-body">
+              <span class="card-meta">
+                <span>动作冒险</span>
+                <span>2026</span>
+              </span>
+              <h3 class="card-title">德尔苏·乌扎拉</h3>
+              <span class="card-desc">老猎人在原始森林中为迷途测绘队引路,却发现自己正被时代与山林共同遗忘。</span>
+              <span class="card-tags">
+          <span>荒野生存</span>
+          <span>人与自然</span>
+          <span>跨文化友谊</span>
+              </span>
+            </span>
+          </a>
+        </article>
+        <article class="movie-card" data-title="杰森在太空" data-region="美国" data-type="电影" data-year="2001" data-genre="科幻/恐怖/血腥">
+          <a href="./movie-13.html" title="杰森在太空">
+            <span class="poster-box">
+              <img src="./13.jpg" alt="杰森在太空" loading="lazy">
+              <span class="poster-gradient"></span>
+              <span class="poster-play">▶</span>
+              <span class="poster-duration">114:22</span>
+            </span>
+            <span class="card-body">
+              <span class="card-meta">
+                <span>科幻奇幻</span>
+                <span>2001</span>
+              </span>
+              <h3 class="card-title">杰森在太空</h3>
+              <span class="card-desc">杀人魔杰森被误送入太空冷冻仓,500年后在星际飞船上复活,开启无重力血浆盛宴。</span>
+              <span class="card-tags">
+          <span>太空杀人魔</span>
+          <span>冷冻复活</span>
+          <span>B级片</span>
+              </span>
+            </span>
+          </a>
+        </article>
+        <article class="movie-card" data-title="非法图利" data-region="中国香港" data-type="电影" data-year="2024" data-genre="犯罪/剧情">
+          <a href="./movie-14.html" title="非法图利">
+            <span class="poster-box">
+              <img src="./14.jpg" alt="非法图利" loading="lazy">
+              <span class="poster-gradient"></span>
+              <span class="poster-play">▶</span>
+              <span class="poster-duration">108:07</span>
+            </span>
+            <span class="card-body">
+              <span class="card-meta">
+                <span>国产热映</span>
+                <span>2024</span>
+              </span>
+              <h3 class="card-title">非法图利</h3>
+              <span class="card-desc">廉政公署调查员追查一起百亿贪腐案,却发现最大的保护伞是自己那位已经退休的恩师。</span>
+              <span class="card-tags">
+          <span>反腐</span>
+          <span>商业犯罪</span>
+          <span>双雄</span>
+              </span>
+            </span>
+          </a>
+        </article>
+        <article class="movie-card" data-title="咱们裸熊第四季" data-region="美国" data-type="剧集" data-year="2019" data-genre="喜剧/动画">
+          <a href="./movie-15.html" title="咱们裸熊第四季">
+            <span class="poster-box">
+              <img src="./15.jpg" alt="咱们裸熊第四季" loading="lazy">
+              <span class="poster-gradient"></span>
+              <span class="poster-play">▶</span>
+              <span class="poster-duration">124:21</span>
+            </span>
+            <span class="card-body">
+              <span class="card-meta">
+                <span>爱情喜剧</span>
+                <span>2019</span>
+              </span>
+              <h3 class="card-title">咱们裸熊第四季</h3>
+              <span class="card-desc">三只性格迥异的熊兄弟——热血棕熊、宅男熊猫、呆萌北极熊——继续他们在人类社会的爆笑日常。</span>
+              <span class="card-tags">
+          <span>治愈系</span>
+          <span>拟人化</span>
+          <span>日常</span>
+              </span>
+            </span>
+          </a>
+        </article>
+        <article class="movie-card" data-title="生死决断" data-region="日本" data-type="电影" data-year="2024" data-genre="悬疑,医疗,伦理">
+          <a href="./movie-16.html" title="生死决断">
+            <span class="poster-box">
+              <img src="./16.jpg" alt="生死决断" loading="lazy">
+              <span class="poster-gradient"></span>
+              <span class="poster-play">▶</span>
+              <span class="poster-duration">118:21</span>
+            </span>
+            <span class="card-body">
+              <span class="card-meta">
+                <span>电影大厅</span>
+                <span>2024</span>
+              </span>
+              <h3 class="card-title">生死决断</h3>
+              <span class="card-desc">急诊科医生发现,自己刚判定的“脑死亡”捐器官者,其实是被人为制造出来的。</span>
+              <span class="card-tags">
+          <span>器官移植</span>
+          <span>死亡抉择</span>
+          <span>医疗黑市</span>
+              </span>
+            </span>
+          </a>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <strong>国产影视大全</strong>
+        <p>提供最新国产影片免费高清在线观看全集服务。本站为影视大全站，资源涵盖电影、电视剧，以国产内容为核心，更新速度快。</p>
+      </div>
+      <div class="footer-links">
+        <a href="./index.html">首页</a>
+        <a href="./categories.html">分类</a>
+        <a href="./rankings.html">排行榜</a>
+        <a href="./search.html">搜索</a>
+          <a href="./category-guochan-hot.html">国产热映</a>
+          <a href="./category-movie-hall.html">电影大厅</a>
+          <a href="./category-drama-series.html">剧集专区</a>
+          <a href="./category-suspense-crime.html">悬疑犯罪</a>
+          <a href="./category-sci-fi-fantasy.html">科幻奇幻</a>
+          <a href="./category-action-adventure.html">动作冒险</a>
+          <a href="./category-romance-comedy.html">爱情喜剧</a>
+          <a href="./category-world-cinema.html">全球影库</a>
+      </div>
+      <p class="copyright">© 2026 国产影视大全</p>
+    </div>
+  </footer>
+  <script src="./assets/app.js"></script>
+  <script src="./assets/search-data.js"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?95df08bc498ee0333203841fd6fee1eb";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
